@@ -95,7 +95,7 @@ function filterTasks() {
     let tasks = document.querySelectorAll('li')
     let search_query = document.getElementById("myInput").value;
     for (var i = 0; i < tasks.length; i++) {
-        if(tasks[i].innerText.slice(0, -1).toLowerCase()
+        if (tasks[i].innerText.slice(0, -1).toLowerCase()
             .includes(search_query.toLowerCase())) {
             tasks[i].hidden = false
         } else {
